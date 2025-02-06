@@ -31,7 +31,7 @@
               <img src="assets/logo-header.png" alt="">
               <h3 class="text-2xl">Browse<span class="text-yellow-300">4</span>Pets</h3>
             </div>
-            <ul class="flex gap-4">
+            <ul class="flex gap-4 sm:hidden">
               <li><a>Find a pet</a></li>
               <li><a>Breeds</a></li>
               <li><a>Contact Us</a></li>
@@ -39,14 +39,14 @@
 
               <!-- Icons are here -->
               <div class="flex items-center gap-2">
-              <div>
+              <div class="sm:hidden">
                 <i class="fa-regular fa-bell"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
               <!-- Buttons are here -->
                <div class="flex items-center pr-36">
-                <button class="rounded-lg border border-yellow-300 px-7 py-3">Login</button>
-                <button class="bg-yellow-300 ml-4 rounded-lg px-7 py-3">Register</button>
+                <button class="rounded-lg border border-yellow-300 px-7 py-3 sm:hidden">Login</button>
+                <button class="bg-yellow-300 ml-4 rounded-lg px-7 py-3 sm:hidden">Register</button>
                 <i class="fa-solid fa-bars lg:hidden"></i>
                </div>
             </div>
@@ -54,13 +54,13 @@
         </nav>
     </header>
 
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-10  bg-[url('assets/cat-big.png')] bg-no-repeat ">
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-10  bg-[url('assets/cat-big.png')] bg-no-repeat">
       <div class="flex flex-col ">
       <!-- Text Container -->
       <div class="pt-16 ">
-        <h1 class="text-5xl adlam-font">Pamper Your Pet,<br> Because They Deserve<br> the Best</h1>
+        <h1 class="text-3xl lg:text-5xl adlam-font">Pamper Your Pet,<br> Because They Deserve<br> the Best</h1>
         <br>
-        <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
+        <p class="text-xs lg:text-xl">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
         <br>
         <button class="bg-yellow-300 rounded-lg px-7 py-3">Find a pet</button>
       </div>
@@ -74,7 +74,7 @@
           <h2 class="text-2xl lg:text-4xl adlam-font">Browse By Categories</h2>
         </div>
         <!-- Category Container -->
-        <div class="grid grid-cols-6 text-center gap-6">
+        <div class="grid grid-cols-2 lg:grid-cols-6 text-center gap-6">
           <!-- Dog -->
           <div class="rounded-lg shadow-md bg-yellow-200 overflow-hidden py-8">
             <div class="flex justify-center bg-white rounded-full p-3 w-16 h-16 mx-auto">
@@ -142,12 +142,12 @@
     </main>
 
           <!-- Trending Pet Products -->
-          <section class="bg-yellow-50 px-36 py-32">
+          <section class="lg:bg-yellow-50 lg:px-36 lg:py-32">
             <div>
-              <h2 class="text-2xl lg:text-4xl adlam-font">Trending Pet Products</h2>
+              <h2 class="text-xl lg:text-4xl adlam-font">Trending Pet Products</h2>
             </div>
             <!-- Main Div -->
-            <div class="py-10 flex gap-6">
+            <div class="lg:py-10 lg:flex gap-6">
               <!-- T-Shirt For Dogs -->
                <div class=" bg-yellow-200 rounded-lg w-1/3 px-6 py-8 bg-[url('assets/cute-pet-small.png')] bg-no-repeat bg-right-bottom">
                 <div class="mb-40">
@@ -158,7 +158,7 @@
                </div>
 
             <!-- Product Grid -->
-            <div class="col-span-2 grid grid-cols-3 gap-4">
+            <div class="lg:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-4">
               <!-- Product Card -->
               <div class="grid grid-cols-2 h-32 bg-white p-4 pr-20 rounded-lg shadow-lg text-center justify-center items-center border border-gray-200">
                 <div class="flex justify-center bg-yellow-50 rounded-lg px-5 py-5">
